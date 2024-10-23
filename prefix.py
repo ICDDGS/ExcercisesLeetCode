@@ -5,8 +5,6 @@ class Solution:
         prefijo = strs[0]
         for string in strs[1:]:
             while string[:len(prefijo)] != prefijo:
-                print("s",string)
-                print("p",prefijo)
                 prefijo = prefijo[:-1]
                 if not prefijo:
                     return ""
